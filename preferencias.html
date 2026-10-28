@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTL TalentMatch | Mi perfil</title>
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- CSS propio -->
+    <link rel="stylesheet" href="CSS/miEstilo.css">
+</head>
+<body>
+    <div class="app-layout">
+        <nav class="sidebar">
+            <a href="dashboard.html" class="side-link" title="Inicio">
+                <i class="bi bi-house-door-fill"></i>
+            </a>
+            <a href="busqueda.html" class="side-link" title="Búsqueda">
+                <i class="bi bi-search"></i>
+            </a>
+            <a href="favoritos.html" class="side-link" title="Favoritos">
+                <i class="bi bi-star-fill"></i>
+            </a>
+            <a href="perfil.html" class="side-link" title="Mi perfil">
+                <i class="bi bi-person-fill"></i>
+            </a>
+        </nav>
+
+        <main class="app-content container-fluid">
+            <h1 class="preferences-title">Mis preferencias laborales</h1>
+            <form action="#" method="get">
+                <div class="row g-3">
+                    <div class="col-12 col-md-6">
+                        <section class="info-card preference-card">
+                            <h2>Preferencias de rol e interés</h2>
+                            <label for="area" class="form-label">Área de interés</label>
+                            <select id="area" name="area" class="form-select">
+                                <option value="desarrollo">Desarrollo web</option>
+                                <option value="diseno">Diseño</option>
+                                <option value="marketing">Marketing digital</option>
+                                <option value="datos">Bases de datos</option>
+                            </select>
+                            <label for="ubicacion" class="form-label mt-3">Ubicación</label>
+                            <input type="text" id="ubicacion" name="ubicacion" class="form-control" value="León, Guanajuato">
+                        </section>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <section class="info-card preference-card">
+                            <h2>Modalidad y condiciones</h2>
+                            <div class="row">
+                                <div class="col-6">
+                                    <p class="mb-2"><strong>Modalidad</strong></p>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="presencial" name="modalidad[]" value="presencial">
+                                        <label class="form-check-label" for="presencial">Presencial</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="hibrida" name="modalidad[]" value="hibrida">
+                                        <label class="form-check-label" for="hibrida">Híbrida</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="remota" name="modalidad[]" value="remota">
+                                        <label class="form-check-label" for="remota">Remota</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-6">
+                                    <p class="mb-2"><strong>Tipo de empleo</strong></p>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="completo" name="tipo[]" value="completo">
+                                        <label class="form-check-label" for="completo">Tiempo completo</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="medio" name="tipo[]" value="medio">
+                                        <label class="form-check-label" for="medio">Medio tiempo</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <section class="info-card preference-card">
+                            <h2>Salario esperado</h2>
+                            <label for="salario" class="form-label">Salario mensual mínimo (MXN)</label>
+                            <input type="number" id="salario" name="salario" class="form-control" min="0" placeholder="Ej. 12000">
+                        </section>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <section class="info-card preference-card extra-preferences">
+                            <h2>Añade más preferencias</h2>
+                            <label for="otras" class="form-label">Otras condiciones o intereses</label>
+                            <textarea id="otras" name="otras" class="form-control" rows="2" placeholder="Escribe tus preferencias"></textarea>
+                        </section>
+                    </div>
+                </div>
+
+                <div class="text-center mt-4">
+                    <button type="submit" class="btn btn-primary btn-sm px-4">Guardar preferencias</button>
+                </div>
+
+            </form>
+            <footer class="app-footer">
+                © 2026 UTL TalentMatch · Cuatro sin control - Desarrolladora:
+                <strong>América Estefanía</strong>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>
